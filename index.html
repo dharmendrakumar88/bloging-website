@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Blogging Website</h1>
+    </header>
+    
+    <main>
+        <section class="user-section">
+            <h2>Create New User</h2>
+            <input type="text" id="username" placeholder="Enter username">
+            <button onclick="addUser()">Add User</button>
+        </section>
+
+        <section class="post-section">
+            <h2>Create New Post</h2>
+            <input type="text" id="postTitle" placeholder="Post Title">
+            <textarea id="postContent" placeholder="Write your post content"></textarea>
+            <button onclick="addPost()">Add Post</button>
+        </section>
+
+        <section class="posts-list">
+            <h2>All Posts</h2>
+            <div id="postsContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  DeePlay Blogging Website</p>
+        <p>&#9733;Developed and Deployed with <span class="heart">&#9829;</span> By: Dharmendra Kumar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
